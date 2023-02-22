@@ -25,17 +25,22 @@
           <i class="fas fa-bars"></i>
         </label>
 
+        <script>localStorage.setItem('id','home');</script>
+
         <img class="logo" src="assets/img/future_logo_.png" height="90px" width="100px" alt="" />
 
         <ul>
           <li>
-            <a class="" href="index.html">Home</a>
+            <a class="" href="index.html" onclick="home();">Home</a>
+            <script>function home(){localStorage.setItem('id','home');}</script>
           </li>
           <li>
-            <a href="about.html">About Me</a>
+            <a href="about.html" onclick="about();">About Me</a>
+            <script>function about(){localStorage.setItem('id','about');}</script>
           </li>
           <li>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.html" onclick="contact();">Contact Us</a>
+            <script>function contact(){localStorage.setItem('id','contact');}</script>
           </li>
         </ul>
         
@@ -46,44 +51,16 @@
   <body>
       <main>
         <!--center cover starts here-->
-        <div class="">
+        <div id="box">
           <div class="row">
-            <video autoplay muted loop>
-              <source src="assets/video/programmer.mp4"
-               type="video/mp4"
-               >
-            Your browser does not support the video tag.
-            </video>
-
-            </div>
-
+            <script src="js/common.js" type="text/javascript"></script>
           </div>
         </div>
-        <!--center cover image ends here-->
+        <!--center cover image or video ends here-->
 
         <!--bio description starts here-->
-        <div class="container">
+        <div class="container" id="box2">
           <div class="row">
-            <div class="col-lg-6">
-              
-                <h1>Future kgaphola</h1>
-                <p>
-                  <b>My bio - </b>Hi, I am Future kgaphola a <span class="badge bg-success">software developer</span><br>
-                  I specialize in  <span class="badge bg-success">web and mobile development</span>, framework that i use is <span class="badge bg-success">xamarin.android</span>, and currently learning <span class="badge bg-success">react</span>. database that i am familiar with are <span class="badge bg-success">firebase</span> and  <span class="badge bg-success">mysql</span> Database.<br>
-                  I went to Tshawane University Of Technology and Studied Software Development For 3 years.<br>
-                  Currently enroled in a <span class="badge bg-success">Boot Camp at Mlab</span> for the <span class="badge bg-success">2023 intake</span>.
-                </p>
-            </div>
-            <div class="col-lg-6">
-              <img class="profImg"
-                src="assets/img/futurek.jpg"
-                alt="profile image"
-                width="300px"
-                height="300px"
-              />
-
-            </div>
-
           </div>
         </div>
         <!--bio description ends here-->

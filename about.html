@@ -24,17 +24,21 @@
           <i class="fas fa-bars"></i>
         </label>
 
+        <script>localStorage.setItem('id','contact');</script>
         <img class="logo" src="assets/img/future_logo_.png" height="90px" width="100px" alt="" />
 
         <ul>
           <li>
-            <a class="" href="index.html">Home</a>
+            <a class="" href="index.html" onclick="home();">Home</a>
+            <script>function home(){localStorage.setItem('id','home');}</script>
           </li>
           <li>
-            <a href="about.html">About Me</a>
+            <a href="about.html" onclick="about();">About Me</a>
+            <script>function about(){localStorage.setItem('id','about');}</script>
           </li>
           <li>
-            <a href="contact.html">Contact Us</a>
+            <a href="contact.html" onclick="contact();">Contact Us</a>
+            <script>function contact(){localStorage.setItem('id','contact');}</script>
           </li>
         </ul>
         
@@ -45,96 +49,17 @@
     
       <main>
         <!--center cover starts here-->
-        <div class="">
+        <div id="box">
           <div class="row">
-            <video autoplay muted loop>
-              <source src="assets/video/programmer.mp4"
-               type="video/mp4"
-               >
-            Your browser does not support the video tag.
-            </video>
-
-            </div>
-
+            <script src="js/common.js" type="text/javascript"></script>
           </div>
         </div>
-        <!--center cover image ends here-->
+        <!--center cover image or video ends here-->
 
         <!--bio description starts here-->
-        <div class="container" style="margin: 5%;">
+        <div class="container" id="box3" style="margin: 5%;">
           <div class="row">
-            <div class="col-lg-6">
-                <h1 style="color: #969799;">About Me</h1>
-                 <ol>
-                    <h4>Personal Details</h4>
-                    <li>Name and Surname: Future kgaphola</li>
-                    <li>Gender: Male</li>
-                    <h4>Education</h4>
-                    <li>High School: Mamagogo High School</li>
-                    <li>Tertiary Institution: Tshwane University Of Technology</li>
-                    <h4>Skills</h4>
-                    <li>PHP fudermentals<div class="progress">
-                      <div class="progress-bar" role="progressbar" style="width: 64%;" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100">64%</div>
-                    </div></li>
-                    <li>C++ fundermentals
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 73%;" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100">73%</div>
-                      </div>
-                    </li>
-                    <li>C# fundermentals
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
-                      </div>
-                    </li>
-                    <li>HTML fundermentals
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 58%;" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100">58%</div>
-                      </div>
-                    </li>
-                    <li>CSS fundermentals
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 42%;" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100">42%</div>
-                      </div>
-                    </li>
-                    <li>JavaScript fundermentals
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 58%;" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100">58%</div>
-                      </div>
-                    </li>
-                    <li>Git fundermentals
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
-                      </div>
-                    </li>
-                    <li>Xamarin.android
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">78%</div>
-                      </div>
-                    </li>
-                 </ol>
-            </div>
-            <div class="col-lg-6">
-              <img class="profImg"
-                src="assets/img/futurek.jpg"
-                alt="profile image"
-                width="300px"
-                height="300px"
-                style="float: right; margin-right: 5%; margin-left: 5%; border-radius: 50%; object-fit: cover; border: 5px solid rgb(195, 203, 221);"
-              />
-              <div class="alert alert-success d-flex align-items-center" role="alert">
-                <div>
-                  <img src="assets/img/github.png" height="28px" width="28px">
-                  <a href="https://github.com/FutureKgaphola/Ticket-System">Here is one of my projects on GitHub</a>
-                </div>
-              </div>
-              <img src="assets/img/c-sharp.png" height="28px" width="28px">
-              <img src="assets/img/c++.png" height="28px" width="28px">
-              <img src="assets/img/css.png" height="28px" width="28px">
-              <img src="assets/img/html-5.png" height="28px" width="28px">
-              <img src="assets/img/js.png" height="28px" width="28px">
-              <img src="assets/img/github.png" height="28px" width="28px">
-              <img src="assets/img/php.png" height="28px" width="28px">
-            </div>
+            
 
             
 
